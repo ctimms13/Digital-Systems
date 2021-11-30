@@ -1,0 +1,19 @@
+{C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/TALLY/TALLY.vhd} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/TALLY/TALLY.vhd}
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tally
+-- Compiling architecture tally_arch of tally
+
+} {} {}} {C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/TALLY/tb_tally.vhd} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/TALLY/tb_tally.vhd}
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb_tally
+-- Compiling architecture tb_tally_arch of tb_tally
+
+} {} {}}

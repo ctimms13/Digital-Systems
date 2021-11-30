@@ -1,0 +1,146 @@
+# Compile of TALLY.vhd was successful.
+# Compile of tb_tally.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+run 1600 ns
+# No Design Loaded!
+run 1600ns
+# No Design Loaded!
+vsim work.tally
+# vsim work.tally 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tally(tally_arch)#1
+vsim work.tb_tally
+# vsim work.tb_tally 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_tally(tb_tally_arch)#1
+# Causality operation skipped due to absense of debug database file
+add wave sim:/tb_tally/*
+run 1600ns
+quit -sim
+# reading C:\MentorGraphics\modeltech64_10.1b\win64/../modelsim.ini
+# Loading project SHIFT
+# Compile of shift.vhd was successful.
+# Compile of shiftd.vhd failed with 1 errors.
+# Compile of tb_shift.vhd was successful.
+# Compile of tb_shiftd.vhd was successful.
+# 4 compiles, 1 failed with 1 error. 
+# Compile of shift.vhd was successful.
+# Compile of shiftd.vhd was successful.
+# Compile of tb_shift.vhd was successful.
+# Compile of tb_shiftd.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.shiftd
+# vsim -voptargs=+acc work.shiftd 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.shiftd(shiftd_arch)#1
+add wave sim:/shiftd/*
+run 3000ns
+quir -sim
+# invalid command name "quir"
+quit -sim
+vsim -voptargs=+acc work.tb_shiftd
+# vsim -voptargs=+acc work.tb_shiftd 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_shiftd(tb_shiftd_arch)#1
+# Loading work.shiftd(shiftd_arch)#1
+add wave sim:/tb_shiftd/*
+run 3000ns
+# ** Fatal: (vsim-3421) Value 8 is out of range 0 to 7.
+#    Time: 100 ns  Iteration: 1  Process: /tb_shiftd/uut/shift File: C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd
+# Fatal error in ForLoop loop at C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd line 31
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd 31 ForLoop loop
+# 
+run 3000ns
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd 31 ForLoop loop
+# 
+run 30000ns
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd 31 ForLoop loop
+# 
+run 3000ns
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SHIFT/shiftd.vhd 31 ForLoop loop
+# 
+quit -sim
+# Compile of shift.vhd was successful.
+# Compile of shiftd.vhd was successful.
+# Compile of tb_shift.vhd was successful.
+# Compile of tb_shiftd.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.tb_shiftd
+# vsim -voptargs=+acc work.tb_shiftd 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_shiftd(tb_shiftd_arch)#1
+# Loading work.shiftd(shiftd_arch)#1
+add wave sim:/tb_shiftd/*
+run 3000ns
+quit -sim
+# reading C:\MentorGraphics\modeltech64_10.1b\win64/../modelsim.ini
+# Loading project COUNT
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd failed with 2 errors.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of CNT8m.vhd was successful.
+# Compile of tb_cnt8m.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.tb_cnt8m
+# vsim -voptargs=+acc work.tb_cnt8m 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_cnt8m(tb_cnt8m_arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cnt8m(cnt8m_arch)#1
+add wave sim:/tb_cnt8m/*
+run 3000nhs
+# Invalid time value: 3000nhs
+run 3000ns
+quit -sim
+# reading C:\MentorGraphics\modeltech64_10.1b\win64/../modelsim.ini
+# Loading project SDR
