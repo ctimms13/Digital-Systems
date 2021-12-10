@@ -92,7 +92,7 @@ BEGIN
        wait for 1650 ns;
        SI<='0'; -- START BIT
        wait for 1600 ns;
-       ---DATA STARTS HERE (1001C:/Users/lg20264/OneDrive - University of Bristol/Documents/SDR_SOURCE_2021(2)/SDR_SOURCE_2021/SOURCE/SDRLAB/tb_top_level.vhd1001)
+       ---DATA STARTS HERE (10011001)
        SI<='1';
        wait for 1600 ns;
        SI<='0';

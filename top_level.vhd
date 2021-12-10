@@ -14,19 +14,19 @@ end top_level;
 architecture top_level_arch of top_level is
 
 --ENTER SHIFT AND CNT8 COMPONENT DECLARATIONS HERE
-component COUNTER
-  port (M : in std_logic_vector (1 downto 0)); -- RESET
+component CNT8m
+  port (M : in std_logic_vector (1 downto 0); -- RESET
         clk : in std_logic; -- CLOCK
-        Q : out std_logic_vector(7 downto 0); -- CLK SIGNAL COUNT
+        Q : out std_logic_vector(7 downto 0) -- CLK SIGNAL COUNT
       );
 end component;
 
-component SHIFTER 
+component shiftd
   port(Din : in std_logic; -- INPUT
       Dirup : in std_logic; -- SHIFT DIRECTION
       En : in std_logic; -- ENABLE SIGNAL
       clk : in std_logic; -- CLK 
-      Y : out std_logic_vector(7 downto 0);
+      Y : out std_logic_vector(7 downto 0)
     );
 end component;
         
@@ -49,31 +49,32 @@ signal CLEAR,ENSR : std_logic;
 begin
 
 --ENTER SHIFTER AND COUNTER PORT MAPPINGS HERE
-Shifter : shifter
+Shifter : shiftd
 port map(
       Din => SI, -- INPUT
-      Dirup => 0, -- SHIFT DIRECTION
+      Dirup => '0', -- SHIFT DIRECTION
       En => ENSR, -- ENABLE SIGNAL
-      clk => clk,
+      clk => CLK,
       Y => D
    );
    
-Counter : counter 
+Counter : CNT8m 
 port map(
-      M => M,
-      clk => clk, 
+      M(1) => CLEAR,
+      M(0) => '1',
+      clk => CLK, 
       Q => Q(7 downto 0)
     );
 
 -- INSTANTIATE CONTROLLER AS TYPE CONTROL
 Controller : control
 port map(
-   clk => clk,
-   q => q(7 downto 3),
-   reset => reset,
+   clk => CLK,
+   q => Q(7 downto 3),
+   reset => RESET,
    SI => SI,
    clr => CLEAR,
-   drdy => drdy,
+   drdy => DRDY,
    ensr => ENSR
    );
       

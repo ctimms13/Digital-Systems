@@ -54,7 +54,7 @@ case v_state is
         else v_state:=s5;
         end if;
     when s3 =>
-        --ENTER CODE FOR STATE S3
+        --ENTER CODE FOR STATE S3failed
         if SI = '1' then v_state:=s4;
         end if;         
     when s4 =>
